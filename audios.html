@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductores de Audio para Niños</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #6a11cb, #2575fc); /* Fondo con gradiente púrpura y azul */
+            color: #fff;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 50px; /* Espacio adicional hacia abajo */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .audio-container {
+            margin: 20px auto;
+            width: 320px;
+            padding: 20px;
+            border-radius: 30px;
+            background: #512da8; /* Fondo morado oscuro */
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); /* Sombra */
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .audio-container:hover {
+            transform: scale(1.05); /* Efecto de agrandado */
+            background: #673ab7; /* Cambio de color al pasar el ratón */
+        }
+        audio {
+            width: 280px;
+            height: 50px;
+            border: none; /* Se eliminan los bordes */
+            border-radius: 15px;
+            outline: none;
+            background: #651fff; /* Fondo púrpura del reproductor */
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+        audio:hover {
+            background: #7c4dff; /* Color púrpura más claro al pasar el ratón */
+        }
+        .button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 20px;
+            background: #00b0ff; /* Fondo azul claro */
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3); /* Sombra del botón */
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.1); /* Efecto de agrandado */
+            background: #00e5ff; /* Cambio de color al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="audio-container">
+            <audio controls>
+                <source src="https://www.dropbox.com/scl/fi/o1cf9updf8yybr78sxw15/PTT-20241009-WA0025.opus?rlkey=14efhj2gms99dmzwib58u3yhq&st=ihvkpeo6&dl=1" type="audio/ogg">
+                Tu navegador no soporta el formato de audio.
+            </audio>
+        </div>
+        <div class="audio-container">
+            <audio controls>
+                <source src="https://www.dropbox.com/scl/fi/xlcuj17xmowlz4lboeg2t/PTT-20241009-WA0026.opus?rlkey=9h7wp4wyh0zowemkp2xg93qjo&st=kbiih8qc&dl=1" type="audio/ogg">
+                Tu navegador no soporta el formato de audio.
+            </audio>
+        </div>
+        <div class="audio-container">
+            <audio controls>
+                <source src="https://www.dropbox.com/scl/fi/lydpp22dwpwq4bcvyis16/PTT-20241009-WA0027.opus?rlkey=p46qz1u7p2inn06ktc4qivyij&st=3y5gf1xs&dl=1" type="audio/ogg">
+                Tu navegador no soporta el formato de audio.
+            </audio>
+        </div>
+        <button class="button" onclick="location.href='juego.html'">jueguito pa' ti</button> <!-- Botón de redirección -->
+    </div>
+</body>
+</html>
